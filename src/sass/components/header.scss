@@ -1,0 +1,72 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+@import "../fonts.scss";
+@import "../functions.scss";
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header {
+	margin-bottom: 200px;
+	width: to-rem(750);
+	text-align: center;
+	&__title {
+		font-size: to-rem(62);
+		font-weight: 700;
+		line-height: 122%;
+		margin-bottom: to-rem(28);
+		margin-top: to-rem(80);
+	}
+	&__subtitle {
+		font-size: to-rem(28);
+		justify-content: center;
+		display: flex;
+		color: #9e9e9e;
+		.content {
+			display: inline-block;
+		}
+		strong {
+			color: black;
+		}
+	}
+	&__button {
+		@include buttonCreate(#f3f5f7, 32, #e3e9ee);
+		margin-top: to-rem(28);
+		color: #000000;
+		transform: translateY(24px);
+		svg {
+			margin-left: to-rem(17);
+			transform: translateY(2px);
+		}
+	}
+	&__ship-img {
+		position: absolute;
+	}
+	.ship {
+		top: 49%;
+		right: 0%;
+	}
+	.rest {
+		left: 7%;
+		top: 56%;
+	}
+	.empty {
+		left: 14%;
+		bottom: to-rem(-440);
+	}
+	.mockup {
+		left: 23%;
+		top: 112%;
+		z-index: 10;
+	}
+	.agree {
+		bottom: -7%;
+		left: 43%;
+	}
+	.cart {
+		left: 26%;
+		bottom: -116%;
+	}
+}

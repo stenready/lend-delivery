@@ -1,0 +1,19 @@
+@import "~normalize.css";
+@import "mixins.scss";
+@import "variables.scss";
+
+@import "components/navigation.scss";
+@import "components/header.scss";
+
+body {
+	position: relative;
+	// background: $bodyBg;
+}
+.delivery {
+	height: 2000px;
+}
+.container {
+	position: relative;
+	max-width: 1440px;
+	margin: 0 auto;
+}

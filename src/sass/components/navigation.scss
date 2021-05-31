@@ -1,0 +1,35 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+@import "../fonts.scss";
+@import "../functions.scss";
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: $menuHeight;
+	&__logo {
+		margin-left: 38px;
+		margin-top: 2px;
+	}
+	&__list {
+		list-style-type: none;
+		font-size: to-rem(18);
+		font-weight: 500;
+		display: flex;
+		width: 380px;
+		justify-content: space-between;
+	}
+	&__item {
+	}
+	&__link {
+		text-decoration: none;
+		font-size: to-rem(18);
+		color: $menuColor;
+		font-weight: 500;
+	}
+	&__button {
+		@include buttonCreate($navButtonColor, 40);
+		margin-right: 43px;
+	}
+}
