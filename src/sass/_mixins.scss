@@ -2,20 +2,31 @@
 @mixin font_face(
 	$file_name,
 	$font_name: $file_name,
-	$path: $font_path,
 	$weight: normal,
 	$style: normal
 ) {
 	@font-face {
 		font-family: quote($font_name);
-		src: url($path + $file-name + ".woff2") format("woff2"),
-			url($path + $file-name + ".woff") format("woff");
+		src: url("../fonts/" + $file-name + ".eot");
+		src: url("../fonts/" + $file-name + ".woff2") format("woff2"),
+			url("../fonts/" + $file-name + ".ttf") format("truetype"),
+			url("../fonts/" + $file-name + ".svg" + "#" + $file-name) format("svg"),
+			url("../fonts/" + $file-name + ".woff") format("woff"),
+			url("../fonts/" + $file-name + ".woff") format("woff");
+
 		font-weight: $weight;
 		font-style: $style;
 	}
 }
+@mixin makeCircle($bg, $w: 80px, $h: 80px) {
+	border-radius: 50%;
+	width: $w;
+	height: $h;
+	background: $bg;
+	// line-height: 4;
+}
 
-@mixin buttonCreate($color: green, $paddingLR, $hoverColor: #005ddf) {
+@mixin buttonCreate($bg: green, $paddingLR, $hoverColor: #005ddf) {
 	padding: to-rem(16) to-rem($paddingLR);
 	font-size: 18px;
 	border: none;
@@ -23,8 +34,10 @@
 	text-align: center;
 	position: relative;
 	display: inline-block;
-	color: #f3f5f7;
-	background-color: $color;
+	color: #0065f2;
+	font-weight: 600;
+	font-size: 16px;
+	background-color: $bg;
 	i {
 		font-size: 18px;
 	}

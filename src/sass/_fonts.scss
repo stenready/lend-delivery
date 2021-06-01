@@ -1,2 +1,34 @@
 @import "mixins";
 @import "variables";
+
+@include font_face(subset-SFProDisplay-Regular, SF-PRO);
+@include font_face(subset-SFProDisplay-Black, SF-Black);
+@include font_face(subset-SFProDisplay-Bold, SF-Bold);
+@include font_face(subset-SFProDisplay-Light, SF-Light);
+@include font_face(subset-SFProDisplay-Medium, SF-Medium);
+@include font_face(subset-SFProDisplay-Thin, SF-Thin);
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;700&display=swap");
+
+%inter {
+	font-family: "Inter", sans-serif;
+}
+
+%regular {
+	font-family: "SF-PRO", sans-serif;
+}
+%SF-Black {
+	font-family: "SF-Black", sans-serif;
+}
+%SF-Bold {
+	font-family: "SF-Bold", sans-serif;
+}
+%SF-Light {
+	font-family: "SF-Light", sans-serif;
+}
+%SF-Medium {
+	font-family: "SF-Medium", sans-serif;
+}
+%SF-Thin {
+	font-family: "SF-Thin", sans-serif;
+}

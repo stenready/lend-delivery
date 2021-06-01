@@ -1,0 +1,110 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+@import "../fonts.scss";
+@import "../functions.scss";
+.screenone {
+	margin-top: 55rem;
+	margin-bottom: 80px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	&__title {
+		font-size: to-rem(72);
+		font-weight: 700;
+		@extend %inter;
+		margin-bottom: to-rem(48);
+		margin-top: 49px;
+		margin-left: 50px;
+	}
+	&__content {
+		width: to-rem(996);
+	}
+	&__subtitle {
+		font-size: to-rem(32);
+		font-weight: 600;
+		color: #969696;
+		line-height: 150%;
+		position: relative;
+		z-index: 10;
+	}
+	&__number-one-container {
+		display: flex;
+		justify-content: center;
+		.content {
+			width: to-rem(531);
+			margin-top: 120px;
+		}
+		.dashed {
+			position: absolute;
+			top: 479px;
+			right: 537px;
+		}
+		.number {
+			font-size: 18.25rem;
+			margin-top: -6px;
+			margin-left: -20px;
+			display: inline-block;
+			font-weight: 500;
+			font-family: Helvetica;
+		}
+		.title {
+			font-size: to-rem(32);
+			color: black;
+			font-weight: 600;
+			margin-bottom: 8px;
+		}
+		.subtitle {
+			color: $textAcsentColor;
+			font-size: to-rem(24);
+			line-height: 133%;
+		}
+	}
+	&__circles {
+		display: flex;
+		justify-content: center;
+		margin-top: to-rem(77);
+		.content {
+			width: to-rem(680);
+			.list {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				.list-item {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					.img-one {
+					}
+					.wrap {
+						justify-content: center;
+						display: flex;
+						align-items: center;
+					}
+					.target {
+						@include makeCircle(#e4f1fa);
+					}
+					.message {
+						@include makeCircle(#e4faea);
+					}
+					.image {
+						@include makeCircle(#ece4fa);
+					}
+					.done {
+						@include makeCircle(#faefe4);
+					}
+					.text {
+						color: #717171;
+						font-size: to-rem(20);
+						font-weight: 600;
+						margin-top: to-rem(18);
+					}
+				}
+			}
+		}
+	}
+	.empty {
+		top: 368px;
+		left: 0;
+		position: absolute;
+	}
+}

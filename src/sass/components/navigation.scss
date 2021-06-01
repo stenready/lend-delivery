@@ -19,6 +19,7 @@
 		display: flex;
 		width: 380px;
 		justify-content: space-between;
+		margin-left: 45px;
 	}
 	&__item {
 	}
@@ -31,5 +32,6 @@
 	&__button {
 		@include buttonCreate($navButtonColor, 40);
 		margin-right: 43px;
+		color: #f3f5f7;
 	}
 }
