@@ -7,12 +7,25 @@
 @import "components/screenone.scss";
 @import "components/info.scss";
 @import "components/numbers.scss";
-
-%makeCircle {
-}
+@import "components/subscribe.scss";
 
 .decor {
 	color: black;
+}
+textarea:focus,
+input:focus {
+	outline: none;
+}
+::placeholder {
+	color: white;
+}
+:-ms-input-placeholder,
+::-ms-input-placeholder,
+::placeholder {
+	color: white;
+}
+* {
+	box-sizing: border-box;
 }
 .one-chips {
 	@include buttonCreate(#fefefe, 4, #e2e9ee);

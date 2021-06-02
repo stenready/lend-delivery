@@ -1,0 +1,62 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+@import "../fonts.scss";
+@import "../functions.scss";
+
+.subscribe {
+	margin-top: 70rem;
+	margin-right: 39px;
+	margin-left: 39px;
+	height: 680px;
+	color: #ffffff;
+	background-color: #0065f2;
+	text-align: center;
+	&__mini-title {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 100%;
+		padding-top: 96px;
+	}
+	&__title {
+		font-size: 72px;
+		line-height: 129%;
+		margin: 18px auto;
+		width: 903px;
+	}
+	&__text {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 133%;
+		width: 500px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+		transform: translate(5px, 38px);
+		@extend %SF-Light;
+		span {
+			opacity: 0.5;
+		}
+	}
+	.content {
+		transform: translate(118px, 41px);
+	}
+	&__form {
+		padding-bottom: 96px;
+		input {
+			width: 651px;
+			height: 72px;
+			background: #5a92df;
+			border-radius: 56px;
+			padding: 8px 8px 8px 32px;
+			border: none;
+			color: white;
+			font-size: 18px;
+		}
+		button {
+			@include buttonCreate(#f3f5f7, 32, #e3e9ee);
+			height: 56px;
+			transform: translateX(-215px);
+			width: 233px;
+			transform: translateX(-243px);
+		}
+	}
+}
