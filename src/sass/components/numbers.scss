@@ -1,0 +1,117 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+@import "../fonts.scss";
+@import "../functions.scss";
+
+.numbers {
+	margin-top: 120px;
+	position: relative;
+	.dashed1 {
+		left: 265px;
+		position: absolute;
+		top: 150px;
+	}
+	.dashed2 {
+		left: 508px;
+		position: absolute;
+		top: 709px;
+	}
+	&__img-circle {
+		position: absolute;
+		right: 0;
+		top: 158px;
+	}
+	&__img-cart {
+		position: absolute;
+		right: 142px;
+		top: 560px;
+	}
+	&__title {
+		text-align: center;
+		margin: auto;
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 150%;
+		color: $colorTextSubsection;
+		width: 910px;
+		transform: translate(-19px, -12px);
+	}
+	.content {
+		width: 595px;
+
+		.circle {
+			background: #e4f1fa;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			span {
+				font-size: 144px;
+				line-height: 100%;
+				@extend %Helvetic-Black;
+				font-weight: bold;
+			}
+		}
+		.title {
+			font-weight: 600;
+			font-size: 32px;
+			line-height: 150%;
+		}
+		.text {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 133%;
+			color: #969696;
+		}
+		.action {
+			@include buttonCreate(#f3f5f7, 32, #e3e9ee);
+			color: black;
+			font-size: 18px;
+			font-weight: 600;
+			margin-left: 62px;
+			margin-top: 30px;
+			padding: 1.2rem 2rem;
+			display: flex;
+			align-items: center;
+			@extend %SF-Bold;
+			img {
+				margin-left: 17px;
+			}
+		}
+	}
+	&__two {
+		position: absolute;
+		top: 356px;
+		left: 41px;
+		.title {
+			margin-top: -31px;
+			margin-left: 72px;
+		}
+		.text {
+			margin-left: 68px;
+			margin-top: 10px;
+		}
+		.circle {
+			width: 219px;
+			height: 218px;
+		}
+	}
+	&__three {
+		top: 765px;
+		position: absolute;
+		right: 124px;
+		.circle {
+			width: 289px;
+			height: 288px;
+		}
+		.title {
+			margin-top: -61px;
+			margin-left: 110px;
+		}
+		.text {
+			width: 500px;
+			margin-left: 108px;
+			margin-top: 10px;
+		}
+	}
+}

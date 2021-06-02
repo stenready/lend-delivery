@@ -9,9 +9,6 @@
 		grid-template-columns: 2fr 1fr;
 		gap: 0px 16px;
 		.left {
-			.ipad {
-				transform: translate(29px, 38px);
-			}
 			padding: 30px;
 			background: #0065f2;
 			box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.09),
@@ -20,6 +17,9 @@
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			gap: 0px 16px;
+			.ipad {
+				transform: translate(29px, 38px);
+			}
 			.top {
 				.event-btn {
 					@include buttonCreate(#fefefe, 4, #e2e9ee);

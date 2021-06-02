@@ -6,7 +6,14 @@
 @import "components/header.scss";
 @import "components/screenone.scss";
 @import "components/info.scss";
+@import "components/numbers.scss";
 
+%makeCircle {
+}
+
+.decor {
+	color: black;
+}
 .one-chips {
 	@include buttonCreate(#fefefe, 4, #e2e9ee);
 	padding: 4px 16px;
@@ -16,10 +23,6 @@
 }
 .cart-component {
 	padding: 32px;
-	// height: 480px;
-	// justify-content: space-between;
-	// display: flex;
-	// flex-direction: column;
 	border: 1px solid #e6e6e6;
 	.title {
 		font-weight: 600;
@@ -56,7 +59,7 @@ ul {
 	color: black;
 }
 .delivery {
-	height: 5000px;
+	height: 20000px;
 }
 .container {
 	position: relative;
