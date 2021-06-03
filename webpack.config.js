@@ -80,7 +80,7 @@ module.exports = {
 							reloadAll: true,
 						},
 					},
-					"css-loader",
+					"css-loader?url=false",
 					"sass-loader",
 				],
 			},

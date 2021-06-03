@@ -7,9 +7,11 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	// padding-top: $menuHeight;
 }
 .header {
 	margin-bottom: 200px;
+	z-index: 10000;
 	width: to-rem(750);
 	text-align: center;
 	&__title {

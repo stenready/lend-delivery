@@ -1,0 +1,49 @@
+.accordion {
+	&__item {
+		margin-bottom: 16px;
+		.accordion__content {
+			height: 0;
+			visibility: hidden;
+			padding: 0 24px;
+		}
+		.open {
+			display: none;
+		}
+		.close {
+			display: block;
+		}
+		&.active {
+			.close {
+				display: none;
+			}
+			.open {
+				display: block;
+			}
+			.accordion__content {
+				height: auto;
+				padding: 24px;
+				visibility: visible;
+				transition: all 0.3s;
+			}
+		}
+	}
+	&__title {
+		background: #f3f5f7;
+		border-radius: 12px;
+		padding: 24px;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 133%;
+		color: black;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__content {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 133%;
+		color: #5f5f5f;
+		padding: 24px;
+	}
+}

@@ -1,0 +1,64 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+@import "../fonts.scss";
+@import "../functions.scss";
+
+.passionate-people {
+	margin-top: 9rem;
+	position: relative;
+	background: #f5fbff;
+	padding: 225px 0 175px 154px;
+	.img-110 {
+		position: absolute;
+		right: 0px;
+		top: -68px;
+	}
+	.img-108 {
+		position: absolute;
+		right: 404px;
+		top: 68px;
+	}
+	.img-107 {
+		position: absolute;
+		left: 391px;
+		top: -42px;
+	}
+	.img-109 {
+		position: absolute;
+		right: 241px;
+		top: 447px;
+	}
+	.img-103 {
+		position: absolute;
+		right: 11px;
+		bottom: 177px;
+	}
+
+	.text-wrap {
+		width: 592px;
+		padding: 225px auto 175px 154px;
+		.circle {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@include makeCircle(#e4f1fa, 80px, 80px);
+			margin-bottom: 27px;
+			transform: translateY(-17px);
+		}
+		.title {
+			font-weight: bold;
+			font-size: 72px;
+			line-height: 122%;
+			letter-spacing: -3px;
+			@extend %inter;
+			color: #000000;
+			margin-bottom: 48px;
+		}
+		.subtitle {
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 133%;
+			color: #5f5f5f;
+		}
+	}
+}

@@ -1,3 +1,4 @@
-import './sass/index.scss'
+import "./sass/index.scss";
 
-
+import "./js/range";
+import "./js/accordion";

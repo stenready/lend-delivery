@@ -7,7 +7,7 @@
   <title>Delivery</title>
 </head>
 <body>
-  <div class="delivery">
+  <div class="delivery" style="overflow-x: hidden;">
 
     <div class="container">
 
@@ -35,7 +35,7 @@
       <!-- end nav -->
 
       <!-- header start -->
-      <header>
+      <header class="root-header">
         <div class="header">
           <div class="header__title">Navigue l’esprit tranquille, on s’occupe de la formation</div>
           <div class="header__subtitle">
@@ -309,20 +309,23 @@
       </section>
     </div>
 
-    <section>
-      <div class="subscribe">
-       <div class="subscribe__mini-title">Nous savons que serez satisfait, mais voyez par vous-même</div>
-       <div class="subscribe__title">Pas de mauvaises surprises,le 1er chapitre est gratuit ! ✌️</div>
-       <div class="subscribe__text">Commence la formation gratuitement et sans engagement. <span>Seulement 49,95$ par la suite pour compléter les chapitres.</span></div>
-       <form id="form" action class="subscribe__form form-subscribe-container" >
-        <div class="content">
-          <input placeholder="john.doe@contact.ca" type="text">
-          <button type="button" class="subscribe__button">Essayer gratuitement</button>
+    <div class="container">
+      <section>
+        <div class="subscribe">
+         <div class="subscribe__mini-title">Nous savons que serez satisfait, mais voyez par vous-même</div>
+         <div class="subscribe__title">Pas de mauvaises surprises,le 1er chapitre est gratuit ! ✌️</div>
+         <div class="subscribe__text">Commence la formation gratuitement et sans engagement. <span>Seulement 49,95$ par la suite pour compléter les chapitres.</span></div>
+         <form id="form" action class="subscribe__form form-subscribe-container" >
+          <div class="content">
+            <input placeholder="john.doe@contact.ca" type="text">
+            <button type="button" class="subscribe__button">Essayer gratuitement</button>
+          </div>
+         </form>
         </div>
-       </form>
-      </div>
-    </section>
+      </section>
+    </div>
 
+    <!-- fotos start  -->
     <section>
       <div class="container">
         <div class="fotos">
@@ -395,6 +398,117 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- fotos end  -->
+
+    <section>
+      <div class="tariff">
+        <div class="tariff__wrap">
+          <div class="tariff__top">
+            <div class="title">Plus de plaisanciers, plus d’économies</div>
+            <div class="text">Nous tenons à faciliter l’accès à notre formation 
+              auprès des amis et des familles. Plus vous êtes, moins vous payez !</div>
+          </div>
+
+          <div class="tariff__range">
+            <div class="result" id="result-persons"></div>
+            <div class="range_wrapper">
+              <button class="minus" id="minus-range">-</button>
+              <div class="wrap">
+                <input min="1" max="10" value="1" type="range" name="range" id="range">
+                <!-- <div class="progress"></div> -->
+              </div>
+              <button class="plus" id="plus-range">+</button>
+            </div>
+          </div>
+          <img src="images/tariff/ImagesTest0579 1.png" class="ImagesTest" alt="ImagesTest0579">
+          <img src="images/tariff/Ellipse 52.svg" class="ellipse52" alt="ImagesTest0579">
+          <img src="images/tariff/Ellipse 51.svg" class="ellipse51" alt="ImagesTest0579">
+          <img src="images/tariff/gps-maps-removebg-preview.svg" class="phone" alt="ImagesTest0579">
+        </div>
+
+        <div class="tariff__card">
+          <div class="content">
+            <div class="chips one-chips">5$ de rabais par personne</div>
+            <div class="price">44.95$</div>
+            <div class="subtitle">
+              Une formation complète de 3 heures organisée en 5 chapitres
+            </div>
+            <div class="list-container">
+              <ul class="list">
+                <li class="item">
+                  <img src="images/tariff/vector.svg" alt="vector">
+                  Étudiez à votre rythme
+                </li>
+                <li class="item">
+                  <img src="images/tariff/vector.svg" alt="vector">
+                  La carte est bonne à vie
+                </li>
+                <li class="item">
+                  <img src="images/tariff/vector.svg" alt="vector">
+                  Les reprises sont gratuites
+                </li>
+                <li class="item">
+                  <img src="images/tariff/vector.svg" alt="vector">
+                  Valide partout au Canada
+                </li>
+              </ul>
+              <button class="action">Essayer gratuitement</button>
+            </div>
+          </div>
+          <div class="tips-wrap">
+            <div class="tip">
+              <span class="circle1 circle">
+                <img src="images/tariff/Vector (1).svg" alt="">
+              </span>
+            <span>Disponible 24/24h</span>
+            </div>
+            <div class="tip">
+              <span class="circle2 circle">
+                <img src="images/tariff/Vector (2).svg" alt="">
+              </span>
+             <span> Support en ligne</span>
+            </div>
+            <div class="tip">
+              <span class="circle3 circle">
+                <img src="images/tariff/Vector (3).svg" alt="">
+              </span>
+              <span>Accessible partout</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="passionate-people">
+          <div class="text-wrap">
+            <span class="circle">
+              <img src="images/passionate-people/icon-people.svg" alt="passionate-people">
+            </span>
+            <div class="title">Par des gens passionnés</div>
+            <div class="subtitle">Nous sommes nous aussi des plaisanciers, et nous voulions créer la plateforme de formation en ligne pour le permis d’embarcation de plaisance la plus interactive et simple qui soit. Notre objectif:  offrir un formation complète, compréhensible et amusante afin que vous puissiez partir naviguer rapidement.</div>
+          </div>
+          <div class="images-wrap">
+            <img src="images/passionate-people/Group 103.png" class="img-103" alt="103">
+            <img src="images/passionate-people/Group 107.png" class="img-107" alt="img-107">
+            <img src="images/passionate-people/Group 108.png" class="img-108 " alt="img-108">
+            <img src="images/passionate-people/Group 109.png" class="img-109" alt="109">
+            <img src="images/passionate-people/Group 110.png" class="img-110" alt="img-110">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="questions">
+          <div class="questions__title">Le saviez-vous ?</div>
+          <div class="questions__wrap"></div>
+          <button class="action">D’autres questions ? Par ici →</button>
         </div>
       </div>
     </section>
