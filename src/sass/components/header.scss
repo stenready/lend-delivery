@@ -14,6 +14,23 @@ header {
 	z-index: 10000;
 	width: to-rem(750);
 	text-align: center;
+	.tablet-btn {
+		@include buttonCreate(#0065f2, 32, #005ddf);
+		color: white;
+		display: none;
+		align-items: center;
+		justify-content: center;
+		margin-top: 20px;
+		svg {
+			margin-left: 17px;
+			path {
+				fill: white;
+			}
+		}
+		@media (max-width: 768px) {
+			display: flex;
+		}
+	}
 	&__title {
 		font-size: to-rem(62);
 		font-weight: 700;

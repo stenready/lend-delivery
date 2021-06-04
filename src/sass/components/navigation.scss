@@ -8,10 +8,17 @@
 	align-items: center;
 	justify-content: space-between;
 	height: $menuHeight;
-	// position: fixed;
-	// z-index: 99999999;
-	// left: 0;
-	// right: 0;
+	.btn-container {
+		display: flex;
+		align-items: center;
+		.circle {
+			margin-right: 26px;
+			@include makeCircle(#f3f5f7, 36px, 36px);
+			display: none;
+			align-items: center;
+			justify-content: center;
+		}
+	}
 	&__logo {
 		margin-left: 38px;
 		margin-top: 2px;
