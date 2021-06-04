@@ -69,6 +69,11 @@ input:focus {
 body {
 	position: relative;
 	@extend %regular;
+	// transition: all .3s ease-in-out;
+
+	// &.fixed-nav {
+	// 	padding-top: 88px;
+	// }
 }
 ul {
 	list-style-type: none;
