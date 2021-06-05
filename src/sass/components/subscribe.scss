@@ -52,7 +52,7 @@
 			font-size: 18px;
 		}
 		button {
-			@include buttonCreate(#f3f5f7, 32, #e3e9ee);
+			@include createButton(#f3f5f7, 32, #e3e9ee);
 			height: 56px;
 			transform: translateX(-215px);
 			width: 233px;

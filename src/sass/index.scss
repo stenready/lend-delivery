@@ -3,6 +3,7 @@
 @import "variables.scss";
 
 @import "components/navigation.scss";
+@import "components/circle-images.scss";
 @import "components/header.scss";
 @import "components/screenone.scss";
 @import "components/info.scss";
@@ -35,13 +36,13 @@ input:focus {
 	box-sizing: border-box;
 }
 .one-chips {
-	@include buttonCreate(#fefefe, 4, #e2e9ee);
+	@include createButton(#fefefe, 4, #e2e9ee);
 	padding: 4px 16px;
 	background: #f2f2f2;
 	color: black;
 	line-height: 150%;
 }
-.cart-component {
+.card-component {
 	padding: 32px;
 	border: 1px solid #e6e6e6;
 	.title {
@@ -66,9 +67,18 @@ input:focus {
 	}
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	position: relative;
 	@extend %regular;
+	// transition: all .3s ease-in-out;
+
+	// &.fixed-nav {
+	// 	padding-top: 88px;
+	// }
 }
 ul {
 	list-style-type: none;
@@ -162,9 +172,11 @@ ul {
 			left: -12%;
 			top: 131%;
 		}
-		.cart {
-			left: 0%;
-			bottom: -98%;
+		.card {
+			display: block;
+			width: 141px;
+			left: 26%;
+			bottom: -89%;
 		}
 	}
 	.screenone {
@@ -227,11 +239,7 @@ ul {
 			left: 30%;
 			top: 64%;
 		}
-		.mobile-rest,
-		.mobile-cart {
-			display: none;
-		}
-		.cart-mobile-375 {
+		.mobile-card {
 			position: absolute;
 			bottom: -244px;
 			z-index: 10;

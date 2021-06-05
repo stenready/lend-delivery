@@ -7,7 +7,7 @@
 	margin-top: 120px;
 	position: relative;
 	.numbers__btn {
-		@include buttonCreate(#0065f2, 32, #005ddf);
+		@include createButton(#0065f2, 32, #005ddf);
 		color: white;
 		display: none;
 		align-items: center;
@@ -39,7 +39,7 @@
 		right: 0;
 		top: 158px;
 	}
-	&__img-cart {
+	&__img-card {
 		position: absolute;
 		right: 142px;
 		top: 560px;
@@ -82,7 +82,7 @@
 			color: #969696;
 		}
 		.action {
-			@include buttonCreate(#f3f5f7, 32, #e3e9ee);
+			@include createButton(#f3f5f7, 32, #e3e9ee);
 			color: black;
 			font-size: 18px;
 			font-weight: 600;

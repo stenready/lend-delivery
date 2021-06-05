@@ -26,7 +26,7 @@
 	// line-height: 4;
 }
 
-@mixin buttonCreate($bg: green, $paddingLR, $hoverColor: #005ddf) {
+@mixin createButton($bg: green, $paddingLR, $hoverColor: #005ddf) {
 	padding: to-rem(16) to-rem($paddingLR);
 	font-size: 18px;
 	border: none;
@@ -38,6 +38,7 @@
 	font-weight: 600;
 	font-size: 16px;
 	background-color: $bg;
+	transition: all .3s ease-in-out;
 	i {
 		font-size: 18px;
 	}

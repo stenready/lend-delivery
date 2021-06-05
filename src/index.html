@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Delivery</title>
 </head>
+
 <body>
   <div class="delivery" style="overflow-x: hidden;">
 
     <div class="container">
 
       <!-- start nav -->
-      <div class="nav">
+      <div class="nav" id="navbar">
         <a href="#" class="nav__logo">
           <img src="images/nav/_logo.svg" alt="_logo">
         </a>
@@ -39,37 +41,57 @@
         <div class="header">
           <div class="header__title">Navigue l’esprit tranquille, on s’occupe de la formation</div>
           <div class="header__subtitle">
-            <div class="content">
-              Une <strong>formation</strong> 
+            <h1 class="content">
+              Une <strong>formation</strong>
               en ligne efficace <br> et rapide pour votre
-             <strong>permis de bateau</strong>
-            </div>
+              <strong>permis de bateau</strong>
+            </h1>
           </div>
           <button class="tablet-btn d-none-768 ">
             Commencer gratuitement
             <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7 0C6.27974 0 5.79582 0.469646 5.79582 1.16344V10.7378L5.8746 12.5524L3.73633 10.2255L2.00322 8.61374C1.78939 8.40027 1.49678 8.26151 1.14791 8.26151C0.495177 8.26151 0 8.73115 0 9.37158C0 9.67045 0.123794 9.94797 0.371383 10.1935L6.11093 15.6478C6.33601 15.8719 6.67363 16 7 16C7.32637 16 7.66399 15.8719 7.88907 15.6478L13.6286 10.1935C13.8762 9.94797 14 9.67045 14 9.37158C14 8.73115 13.5161 8.26151 12.8521 8.26151C12.5032 8.26151 12.2106 8.40027 11.9968 8.61374L10.2637 10.2255L8.1254 12.5417L8.20418 10.7378V1.16344C8.20418 0.469646 7.72026 0 7 0Z" fill="black"/>
-             </svg>  
+              <path
+                d="M7 0C6.27974 0 5.79582 0.469646 5.79582 1.16344V10.7378L5.8746 12.5524L3.73633 10.2255L2.00322 8.61374C1.78939 8.40027 1.49678 8.26151 1.14791 8.26151C0.495177 8.26151 0 8.73115 0 9.37158C0 9.67045 0.123794 9.94797 0.371383 10.1935L6.11093 15.6478C6.33601 15.8719 6.67363 16 7 16C7.32637 16 7.66399 15.8719 7.88907 15.6478L13.6286 10.1935C13.8762 9.94797 14 9.67045 14 9.37158C14 8.73115 13.5161 8.26151 12.8521 8.26151C12.5032 8.26151 12.2106 8.40027 11.9968 8.61374L10.2637 10.2255L8.1254 12.5417L8.20418 10.7378V1.16344C8.20418 0.469646 7.72026 0 7 0Z"
+                fill="black" />
+            </svg>
           </button>
           <button class="header__button">
             Découvrir la formation
             <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7 0C6.27974 0 5.79582 0.469646 5.79582 1.16344V10.7378L5.8746 12.5524L3.73633 10.2255L2.00322 8.61374C1.78939 8.40027 1.49678 8.26151 1.14791 8.26151C0.495177 8.26151 0 8.73115 0 9.37158C0 9.67045 0.123794 9.94797 0.371383 10.1935L6.11093 15.6478C6.33601 15.8719 6.67363 16 7 16C7.32637 16 7.66399 15.8719 7.88907 15.6478L13.6286 10.1935C13.8762 9.94797 14 9.67045 14 9.37158C14 8.73115 13.5161 8.26151 12.8521 8.26151C12.5032 8.26151 12.2106 8.40027 11.9968 8.61374L10.2637 10.2255L8.1254 12.5417L8.20418 10.7378V1.16344C8.20418 0.469646 7.72026 0 7 0Z" fill="black"/>
-             </svg>              
+              <path
+                d="M7 0C6.27974 0 5.79582 0.469646 5.79582 1.16344V10.7378L5.8746 12.5524L3.73633 10.2255L2.00322 8.61374C1.78939 8.40027 1.49678 8.26151 1.14791 8.26151C0.495177 8.26151 0 8.73115 0 9.37158C0 9.67045 0.123794 9.94797 0.371383 10.1935L6.11093 15.6478C6.33601 15.8719 6.67363 16 7 16C7.32637 16 7.66399 15.8719 7.88907 15.6478L13.6286 10.1935C13.8762 9.94797 14 9.67045 14 9.37158C14 8.73115 13.5161 8.26151 12.8521 8.26151C12.5032 8.26151 12.2106 8.40027 11.9968 8.61374L10.2637 10.2255L8.1254 12.5417L8.20418 10.7378V1.16344C8.20418 0.469646 7.72026 0 7 0Z"
+                fill="black" />
+            </svg>
           </button>
-          <img class="header__img ship d-none-1920" src="./images/header/bubbles.png" alt="bubbles">
-          <img class="header__img ship d-1920" src="./images/header/bubbles_desctop.png" alt="bubbles">
+          <div class="header__img ship d-none-1920">
+            <img src="./images/header/bubbles.png" alt="bubbles">
+          </div>
+          <div class="header__img ship d-1920">
+            <img src="./images/header/bubbles_desktop.png" alt="bubbles">
+          </div>
 
-          <img class="header__img rest" src="./images/header/bubbles_rest.png" alt="bubbles">
-          <img class="header__img empty" src="./images/header/empty_bubbles.png" alt="bubbles">
-          <img class="header__img mockup" src="./images/header/Mockup.png" alt="bubbles">
-          <img class="header__img agree" src="./images/header/agree.png" alt="bubbles">
-          <img class="header__img cart d-none-1920" src="./images/header/cart.png" alt="bubbles">
-          <img class="header__img cart d-1920" src="./images/header/cart-desctop.png" alt="bubbles">
+          <div class="header__img rest circle animate">
+            <img src="" alt="bubbles">
+          </div>
+          <div class="header__img empty">
+            <img src="./images/header/empty_bubbles.png" alt="bubbles">
+          </div>
+          <div class="header__img mockup">
+            <img src="./images/header/Mockup.png" alt="bubbles">
+          </div>
+          <div class="header__img agree">
+            <img src="./images/header/agree.png" alt="bubbles">
+          </div>
+          <div class="header__img card d-none-1920">
+            <img src="./images/header/card.png" alt="bubbles">
+          </div>
+          <div class="header__img card d-1920">
+            <img src="./images/header/card-desktop.png" alt="bubbles">
+          </div>
 
         </div>
       </header>
-      <!-- header end -->      
+      <!-- header end -->
     </div>
 
     <!-- screenone start -->
@@ -78,14 +100,16 @@
         <div class="screenone">
           <div class="screenone__content">
 
-            <div class="screenone__title">Pourquoi suivre <br> une formation officielle ?</div>
+            <h2 class="screenone__title">Pourquoi suivre <br> une formation officielle ?</h2>
 
             <div class="screenone__subtitle">
-              <div class="black">Tous les conducteurs d'une embarcation de plaisance à moteur doivent avoir en leur possession une preuve de compétence.</div>  Le gouvenement canadien impose le suivi d’une formation de minimum 3 heures avant de pouvoir passer l’examen du permis de bateau.
+              <div class="black">Tous les conducteurs d'une embarcation de plaisance à moteur doivent avoir en leur
+                possession une preuve de compétence.</div> Le gouvenement canadien impose le suivi d’une formation de
+              minimum 3 heures avant de pouvoir passer l’examen du permis de bateau.
             </div>
 
             <img class="screenone__img empty d-none-1920" src="./images/screenone/_bubble.png" alt="bubbles">
-            <img class="screenone__img empty d-1920" src="./images/screenone/_bubble.desctop.png" alt="bubbles">
+            <img class="screenone__img empty d-1920" src="./images/screenone/_bubble.desktop.png" alt="bubbles">
 
 
             <div class="screenone__number-one-container">
@@ -93,7 +117,8 @@
                 <img src="images/screenone/dashed.svg" class="dashed" alt="dashed">
                 <span class="number">1</span>
                 <div class="title">Suis la formation officielle.</div>
-                <div class="subtitle">Notre formation en 5 chapitres te prépare au mieux à réussir ton permis d’embarcation de plaisance, avec une expérience bien pensée et interactive.</div>
+                <div class="subtitle">Notre formation en 5 chapitres te prépare au mieux à réussir ton permis
+                  d’embarcation de plaisance, avec une expérience bien pensée et interactive.</div>
               </div>
             </div>
 
@@ -139,7 +164,7 @@
     <div class="container">
       <div class="info" id="info">
         <div class="info__firts-grid">
-          <div class="left">
+          <a href="#" class="left">
             <div class="top">
               <div class="chips">
                 <div class="wrap">
@@ -151,7 +176,7 @@
                   </button>
                 </div>
                 <div class="title">Lois et réglementations</div>
-                </div>
+              </div>
               <ul class="list">
                 <li class="item">
                   <img src="images/info/icon-list-item.svg" alt="icon-list-item" class="icon">
@@ -172,13 +197,13 @@
               </ul>
               <button class="event-btn">
                 Essayer gratuitement !
-                <img src="images/info/errow-right.svg" alt="errow-right">
+                <img src="images/info/arrow-right.svg" alt="arrow-right">
               </button>
             </div>
             <div class="img_wrap">
               <img class="ipad" src="images/info/ipad.png" alt="Screen">
             </div>
-          </div>
+          </a>
           <div class="right">
             <div class="wrap">
               <div class="one-chips">Chapitre 2</div>
@@ -285,7 +310,7 @@
 
         <div class="info__second-grid">
           <div class="grid-item">
-            <div class="cart-component">
+            <div class="card-component">
               <div class="wrap">
                 <div class="one-chips">Chapitre 3</div>
                 <div class="title">Planification et préparation des excursions</div>
@@ -312,7 +337,7 @@
           </div>
 
           <div class="grid-item">
-            <div class="cart-component">
+            <div class="card-component">
               <div class="wrap">
                 <div class="one-chips">Chapitre 4</div>
                 <div class="title">Partage des voies navigables</div>
@@ -339,7 +364,7 @@
           </div>
 
           <div class="grid-item">
-            <div class="cart-component">
+            <div class="card-component">
               <div class="wrap">
                 <div class="one-chips">Chapitre 5</div>
                 <div class="title">Prévention des situations d’urgence</div>
@@ -375,20 +400,25 @@
         <div class="numbers">
           <div class="numbers__title">
             <span class="decor">Claire comme de l’eau de roche.</span>
-             Notre équipe travaille fort à développer une formation intuitive et efficace. Pas de .pdf, l’interactivité est la clé du succès !</div>
-             <button class="tablet-btn numbers__btn d-none-768 ">
-              Essayer gratuitement
-              <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 0C6.27974 0 5.79582 0.469646 5.79582 1.16344V10.7378L5.8746 12.5524L3.73633 10.2255L2.00322 8.61374C1.78939 8.40027 1.49678 8.26151 1.14791 8.26151C0.495177 8.26151 0 8.73115 0 9.37158C0 9.67045 0.123794 9.94797 0.371383 10.1935L6.11093 15.6478C6.33601 15.8719 6.67363 16 7 16C7.32637 16 7.66399 15.8719 7.88907 15.6478L13.6286 10.1935C13.8762 9.94797 14 9.67045 14 9.37158C14 8.73115 13.5161 8.26151 12.8521 8.26151C12.5032 8.26151 12.2106 8.40027 11.9968 8.61374L10.2637 10.2255L8.1254 12.5417L8.20418 10.7378V1.16344C8.20418 0.469646 7.72026 0 7 0Z" fill="black"/>
-               </svg>  
-            </button>
-             <div class="numbers__two">
+            Notre équipe travaille fort à développer une formation intuitive et efficace. Pas de .pdf, l’interactivité
+            est la clé du succès !
+          </div>
+          <button class="tablet-btn numbers__btn d-none-768 ">
+            Essayer gratuitement
+            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7 0C6.27974 0 5.79582 0.469646 5.79582 1.16344V10.7378L5.8746 12.5524L3.73633 10.2255L2.00322 8.61374C1.78939 8.40027 1.49678 8.26151 1.14791 8.26151C0.495177 8.26151 0 8.73115 0 9.37158C0 9.67045 0.123794 9.94797 0.371383 10.1935L6.11093 15.6478C6.33601 15.8719 6.67363 16 7 16C7.32637 16 7.66399 15.8719 7.88907 15.6478L13.6286 10.1935C13.8762 9.94797 14 9.67045 14 9.37158C14 8.73115 13.5161 8.26151 12.8521 8.26151C12.5032 8.26151 12.2106 8.40027 11.9968 8.61374L10.2637 10.2255L8.1254 12.5417L8.20418 10.7378V1.16344C8.20418 0.469646 7.72026 0 7 0Z"
+                fill="black" />
+            </svg>
+          </button>
+          <div class="numbers__two">
             <div class="content">
               <div class="circle">
                 <span>2</span>
               </div>
               <div class="title">Effectue l’examen.</div>
-              <div class="text">Après la formation, tu seras fin prêt à passer l’examen de Transport Canada. Nous avons créer un examen de pratique pour évaluer tes connaissances! </div>
+              <div class="text">Après la formation, tu seras fin prêt à passer l’examen de Transport Canada. Nous avons
+                créer un examen de pratique pour évaluer tes connaissances! </div>
               <button class="action">
                 Teste tes connaisances →
                 <img src="images/header/arrow.svg" alt="arrow">
@@ -401,11 +431,12 @@
                 <span>3</span>
               </div>
               <div class="title">Imprime la carte & part naviguer. </div>
-              <div class="text">Si tout s’est bien passé, tu as avoir réussi ton permis et tu peux imprimer ta carte d’embarcation de chez toi.</div>
+              <div class="text">Si tout s’est bien passé, tu as avoir réussi ton permis et tu peux imprimer ta carte
+                d’embarcation de chez toi.</div>
             </div>
           </div>
           <img src="images/numbers/Ellipse 44.png" alt="Ellipse" class="numbers__img-circle d-none-1920">
-          <img src="images/numbers/ellipse_desctop.png" alt="Ellipse" class="numbers__img-circle d-1920 elipse">
+          <img src="images/numbers/ellipse_desktop.png" alt="Ellipse" class="numbers__img-circle d-1920 elipse">
           <img src="images/numbers/rest_768.png" alt="Ellipse" class="mobile-rest d-768 ">
           <img src="images/numbers/dashed-768.png" alt="Ellipse" class="mobile-dashed d-768 ">
 
@@ -415,14 +446,14 @@
 
 
 
-          <img src="images/numbers/cart.png" class="mobile-cart d-none-1920" alt="image">
-          <img src="images/numbers/768-cart.png" class="mobile-cart d-768" alt="image">
+          <img src="images/numbers/card.png" class="mobile-card d-none-1920" alt="image">
+          <img src="images/numbers/768-card.png" class="mobile-card d-768" alt="image">
 
 
-          <img class="numbers__img-cart d-1920" src="images/numbers/cart_desctop.png" alt="bubbles">
+          <img class="numbers__img-card d-1920" src="images/numbers/card_desktop.png" alt="bubbles">
           <img src="images/numbers/dashed1.svg" class="dashed1" alt="dashed1">
           <img src="images/numbers/dashed2.svg" class="dashed2 d-none-1920" alt="dashed2">
-          <img src="images/numbers/dashed2_desctop.svg" class="dashed2 d-1920" alt="dashed2">
+          <img src="images/numbers/dashed2_desktop.svg" class="dashed2 d-1920" alt="dashed2">
 
 
         </div>
@@ -432,15 +463,16 @@
     <div class="container">
       <section>
         <div class="subscribe">
-         <div class="subscribe__mini-title">Nous savons que serez satisfait, mais voyez par vous-même</div>
-         <div class="subscribe__title">Pas de mauvaises surprises,le 1er chapitre est gratuit ! ✌️</div>
-         <div class="subscribe__text">Commence la formation gratuitement et sans engagement. <span>Seulement 49,95$ par la suite pour compléter les chapitres.</span></div>
-         <form id="form" action class="subscribe__form form-subscribe-container" >
-          <div class="content">
-            <input placeholder="john.doe@contact.ca" type="text">
-            <button type="button" class="subscribe__button">Essayer gratuitement</button>
-          </div>
-         </form>
+          <div class="subscribe__mini-title">Nous savons que serez satisfait, mais voyez par vous-même</div>
+          <div class="subscribe__title">Pas de mauvaises surprises,le 1er chapitre est gratuit ! ✌️</div>
+          <div class="subscribe__text">Commence la formation gratuitement et sans engagement. <span>Seulement 49,95$ par
+              la suite pour compléter les chapitres.</span></div>
+          <form id="form" action class="subscribe__form form-subscribe-container">
+            <div class="content">
+              <input placeholder="john.doe@contact.ca" type="text">
+              <button type="button" class="subscribe__button">Essayer gratuitement</button>
+            </div>
+          </form>
         </div>
       </section>
     </div>
@@ -454,44 +486,45 @@
               Plus de 26 000 plaisanciers nous ont fait confiance
             </div>
             <div class="text">
-              Cartebateau est la façon simple d’obtenir votre permis d’embarcation de plaisance et d’avoir la liberté de naviguer quand bon vous semble, <span class="decor">seul ou en famille et entre amis !</span>
+              Cartebateau est la façon simple d’obtenir votre permis d’embarcation de plaisance et d’avoir la liberté de
+              naviguer quand bon vous semble, <span class="decor">seul ou en famille et entre amis !</span>
             </div>
             <button class="action">Découvrez nos forfaits de goupe →</button>
           </div>
           <div class="fotos__foto-list">
             <div class="image1">
-              <img src="images/fotos/1.png" class="img-1" alt="1">
+              <img src="images/photos/1.png" class="img-1" alt="1">
               <div class="avatar-block">
-                <img src="images/fotos/ava.svg" alt="ava">
+                <img src="images/photos/ava.svg" alt="ava">
                 <div class="text">J’ai adoré la formation et maintenant je peux partir naviguer quand je veux 😍</div>
               </div>
             </div>
             <div class="image2">
-              <img src="images/fotos/2.png" alt="2">
+              <img src="images/photos/2.png" alt="2">
             </div>
             <div class="image3">
-              <img src="images/fotos/3.png" alt="3">
+              <img src="images/photos/3.png" alt="3">
             </div>
             <div class="image4">
-              <img src="images/fotos/4.png" alt="4">
+              <img src="images/photos/4.png" alt="4">
             </div>
             <div class="image5">
-              <img src="images/fotos/5.png" alt="5">
+              <img src="images/photos/5.png" alt="5">
             </div>
             <div class="image6">
-              <img src="images/fotos/6.png" class="img-6" alt="6">
+              <img src="images/photos/6.png" class="img-6" alt="6">
               <div class="avatar-block">
-                <img src="images/fotos/ava.svg"  alt="ava">
+                <img src="images/photos/ava.svg" alt="ava">
                 <div class="text">J’ai obtenu mon permis rapidement et à temps pour mon voyage de pêche</div>
               </div>
             </div>
             <div class="image7">
-              <img src="images/fotos/7.png" alt="7">
+              <img src="images/photos/7.png" alt="7">
             </div>
             <div class="image8">
-              <img src="images/fotos/8.png" class="img-8" alt="8">
+              <img src="images/photos/8.png" class="img-8" alt="8">
               <div class="avatar-block">
-                <img src="images/fotos/ava.svg" alt="ava">
+                <img src="images/photos/ava.svg" alt="ava">
                 <div class="text">Les enfants adorent nos journées en bateau!</div>
               </div>
             </div>
@@ -500,13 +533,13 @@
           <div class="fotos__stars">
             <div class="content">
               <div class="wrap">
-                <img src="images/fotos/l.svg" alt="" class="left">
-                <img src="images/fotos/full.svg" alt="" class="star">
-                <img src="images/fotos/full.svg" alt="" class="star">
-                <img src="images/fotos/full.svg" alt="" class="star">
-                <img src="images/fotos/full.svg" alt="" class="star">
-                <img src="images/fotos/empty.svg" alt="" class="star">
-                <img src="images/fotos/r.svg" alt="" class="right">
+                <img src="images/photos/l.svg" alt="" class="left">
+                <img src="images/photos/full.svg" alt="" class="star">
+                <img src="images/photos/full.svg" alt="" class="star">
+                <img src="images/photos/full.svg" alt="" class="star">
+                <img src="images/photos/full.svg" alt="" class="star">
+                <img src="images/photos/empty.svg" alt="" class="star">
+                <img src="images/photos/r.svg" alt="" class="right">
               </div>
               <div class="rate">
                 <span>4.7/5</span>
@@ -528,7 +561,7 @@
         <div class="tariff__wrap">
           <div class="tariff__top">
             <div class="title">Plus de plaisanciers, plus d’économies</div>
-            <div class="text">Nous tenons à faciliter l’accès à notre formation 
+            <div class="text">Nous tenons à faciliter l’accès à notre formation
               auprès des amis et des familles. Plus vous êtes, moins vous payez !</div>
           </div>
 
@@ -544,14 +577,14 @@
             </div>
           </div>
           <img src="images/tariff/ImagesTest0579 1.png" class="ImagesTest d-none-1920" alt="ImagesTest0579">
-          <img src="images/tariff/ImagesTest0579 1_desctop.png" class="ImagesTest d-1920" alt="ImagesTest0579">
+          <img src="images/tariff/ImagesTest0579 1_desktop.png" class="ImagesTest d-1920" alt="ImagesTest0579">
 
           <img src="images/tariff/ImagesTest0579 1_768.png" class="mobile-flashlight d-768" alt="image">
           <img src="images/tariff/Ellipse 52_768.png" class="mobile-elipse d-768" alt="image">
 
 
-          <img src="images/tariff/Ellipse 52.svg" class="ellipse52 d-none-1920"  alt="ImagesTest0579">
-          <img src="images/tariff/Ellipse 52_desctop.png" class="ellipse52 d-1920"  alt="ImagesTest0579">
+          <img src="images/tariff/Ellipse 52.svg" class="ellipse52 d-none-1920" alt="ImagesTest0579">
+          <img src="images/tariff/Ellipse 52_desktop.png" class="ellipse52 d-1920" alt="ImagesTest0579">
 
           <img src="images/tariff/Ellipse 51.svg" class="ellipse51" alt="ImagesTest0579">
           <img src="images/tariff/gps-maps-removebg-preview.svg" class="phone" alt="ImagesTest0579">
@@ -591,13 +624,13 @@
               <span class="circle1 circle">
                 <img src="images/tariff/Vector (1).svg" alt="">
               </span>
-            <span>Disponible 24/24h</span>
+              <span>Disponible 24/24h</span>
             </div>
             <div class="tip">
               <span class="circle2 circle">
                 <img src="images/tariff/Vector (2).svg" alt="">
               </span>
-             <span> Support en ligne</span>
+              <span> Support en ligne</span>
             </div>
             <div class="tip">
               <span class="circle3 circle">
@@ -618,7 +651,10 @@
               <img src="images/passionate-people/icon-people.svg" alt="passionate-people">
             </span>
             <div class="title">Par des gens passionnés</div>
-            <div class="subtitle">Nous sommes nous aussi des plaisanciers, et nous voulions créer la plateforme de formation en ligne pour le permis d’embarcation de plaisance la plus interactive et simple qui soit. Notre objectif:  offrir un formation complète, compréhensible et amusante afin que vous puissiez partir naviguer rapidement.</div>
+            <div class="subtitle">Nous sommes nous aussi des plaisanciers, et nous voulions créer la plateforme de
+              formation en ligne pour le permis d’embarcation de plaisance la plus interactive et simple qui soit. Notre
+              objectif: offrir un formation complète, compréhensible et amusante afin que vous puissiez partir naviguer
+              rapidement.</div>
           </div>
           <div class="images-wrap d-none-768">
             <img src="images/passionate-people/Group 103.png" class="img-103" alt="103">
@@ -649,10 +685,12 @@
                   <span class="text">Combien de temps dure la formation ?</span>
                   <span class="close">+</span>
                   <span class="open">-</span>
-             
+
                 </div>
                 <div class="accordion__content">
-                  Transport Canada exige que le temps de formation soit d’une durée de 3 heures. Chez Cartebateau, notre formation a été conçue de manière à rendre ce temps d’étude minimum le plus agréable et interactif possible.
+                  Transport Canada exige que le temps de formation soit d’une durée de 3 heures. Chez Cartebateau, notre
+                  formation a été conçue de manière à rendre ce temps d’étude minimum le plus agréable et interactif
+                  possible.
                 </div>
               </li>
               <li class="accordion__item ">
@@ -661,10 +699,12 @@
                     perdue ou brisée ?</span>
                   <span class="close">+</span>
                   <span class="open">-</span>
-             
+
                 </div>
                 <div class="accordion__content">
-                  Transport Canada exige que le temps de formation soit d’une durée de 3 heures. Chez Cartebateau, notre formation a été conçue de manière à rendre ce temps d’étude minimum le plus agréable et interactif possible.
+                  Transport Canada exige que le temps de formation soit d’une durée de 3 heures. Chez Cartebateau, notre
+                  formation a été conçue de manière à rendre ce temps d’étude minimum le plus agréable et interactif
+                  possible.
                 </div>
               </li>
               <li class="accordion__item ">
@@ -672,10 +712,12 @@
                   <span class="text">Ai-je besoin de la carte pour conduire un bateau électrique ?</span>
                   <span class="close">+</span>
                   <span class="open">-</span>
-             
+
                 </div>
                 <div class="accordion__content">
-                  Transport Canada exige que le temps de formation soit d’une durée de 3 heures. Chez Cartebateau, notre formation a été conçue de manière à rendre ce temps d’étude minimum le plus agréable et interactif possible.
+                  Transport Canada exige que le temps de formation soit d’une durée de 3 heures. Chez Cartebateau, notre
+                  formation a été conçue de manière à rendre ce temps d’étude minimum le plus agréable et interactif
+                  possible.
                 </div>
               </li>
               <li class="accordion__item ">
@@ -683,10 +725,12 @@
                   <span class="text">Est-ce qu’il s’agit d’une formation officielle de Transport Canada ?</span>
                   <span class="close">+</span>
                   <span class="open">-</span>
-             
+
                 </div>
                 <div class="accordion__content">
-                  Transport Canada exige que le temps de formation soit d’une durée de 3 heures. Chez Cartebateau, notre formation a été conçue de manière à rendre ce temps d’étude minimum le plus agréable et interactif possible.
+                  Transport Canada exige que le temps de formation soit d’une durée de 3 heures. Chez Cartebateau, notre
+                  formation a été conçue de manière à rendre ce temps d’étude minimum le plus agréable et interactif
+                  possible.
                 </div>
               </li>
             </ul>
@@ -716,19 +760,23 @@
           </div>
           <div class="subscribe-social__social">
             <ul class="social-list">
-              
+
               <li class="social-item">
                 <a href="#" class="youtube">
                   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8254 3.43676C18.682 3.66741 19.3575 4.34286 19.5881 5.19953C20 6.74813 20 10.0101 20 10.0101C20 10.0101 20 13.2555 19.5881 14.8206C19.3575 15.6773 18.682 16.3527 17.8254 16.5834C16.2603 16.9952 10 16.9952 10 16.9952C10 16.9952 3.7397 16.9952 2.17463 16.5834C1.31796 16.3527 0.642504 15.6773 0.411862 14.8206C0 13.272 0 10.0101 0 10.0101C0 10.0101 0 6.7646 0.411862 5.19953C0.642504 4.34286 1.31796 3.66741 2.17463 3.43676C3.7397 3.0249 10 3.0249 10 3.0249C10 3.0249 16.2603 3.0249 17.8254 3.43676ZM13.196 10.0101L8.0066 13.0084V7.01171L13.196 10.0101Z" fill="white"/>
-                  </svg>                  
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M17.8254 3.43676C18.682 3.66741 19.3575 4.34286 19.5881 5.19953C20 6.74813 20 10.0101 20 10.0101C20 10.0101 20 13.2555 19.5881 14.8206C19.3575 15.6773 18.682 16.3527 17.8254 16.5834C16.2603 16.9952 10 16.9952 10 16.9952C10 16.9952 3.7397 16.9952 2.17463 16.5834C1.31796 16.3527 0.642504 15.6773 0.411862 14.8206C0 13.272 0 10.0101 0 10.0101C0 10.0101 0 6.7646 0.411862 5.19953C0.642504 4.34286 1.31796 3.66741 2.17463 3.43676C3.7397 3.0249 10 3.0249 10 3.0249C10 3.0249 16.2603 3.0249 17.8254 3.43676ZM13.196 10.0101L8.0066 13.0084V7.01171L13.196 10.0101Z"
+                      fill="white" />
+                  </svg>
                 </a>
               </li>
 
               <li class="social-item">
                 <a href="#" class="fb">
                   <svg width="18" height="33" viewBox="0 0 18 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.7852 18.7812L17.6719 13H12.125V9.25C12.125 7.66797 12.8984 6.125 15.3828 6.125H17.9062V1.20312C17.9062 1.20312 15.6172 0.8125 13.4297 0.8125C8.85938 0.8125 5.875 3.58203 5.875 8.59375V13H0.796875V18.7812H5.875V32.7578C6.89453 32.918 7.9375 33 9 33C10.0625 33 11.1055 32.918 12.125 32.7578V18.7812H16.7852Z" fill="white"/>
+                    <path
+                      d="M16.7852 18.7812L17.6719 13H12.125V9.25C12.125 7.66797 12.8984 6.125 15.3828 6.125H17.9062V1.20312C17.9062 1.20312 15.6172 0.8125 13.4297 0.8125C8.85938 0.8125 5.875 3.58203 5.875 8.59375V13H0.796875V18.7812H5.875V32.7578C6.89453 32.918 7.9375 33 9 33C10.0625 33 11.1055 32.918 12.125 32.7578V18.7812H16.7852Z"
+                      fill="white" />
                   </svg>
                 </a>
               </li>
@@ -736,28 +784,34 @@
               <li class="social-item">
                 <a href="#" class="poshta">
                   <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 4.608V12.75C20 14.483 18.6435 15.8992 16.9344 15.9949L16.75 16H3.25C1.51697 16 0.100754 14.6435 0.00514483 12.9344L0 12.75V4.608L9.65199 9.66437C9.86995 9.77854 10.13 9.77854 10.348 9.66437L20 4.608ZM3.25 0H16.75C18.4347 0 19.8201 1.28191 19.9838 2.92355L10 8.15334L0.0161917 2.92355C0.173861 1.34271 1.46432 0.09545 3.06409 0.00522852L3.25 0H16.75H3.25Z" fill="white"/>
-                   </svg> 
+                    <path
+                      d="M20 4.608V12.75C20 14.483 18.6435 15.8992 16.9344 15.9949L16.75 16H3.25C1.51697 16 0.100754 14.6435 0.00514483 12.9344L0 12.75V4.608L9.65199 9.66437C9.86995 9.77854 10.13 9.77854 10.348 9.66437L20 4.608ZM3.25 0H16.75C18.4347 0 19.8201 1.28191 19.9838 2.92355L10 8.15334L0.0161917 2.92355C0.173861 1.34271 1.46432 0.09545 3.06409 0.00522852L3.25 0H16.75H3.25Z"
+                      fill="white" />
+                  </svg>
                 </a>
               </li>
 
               <li class="social-item">
                 <a href="#" class="location">
                   <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.157 14.8823L13.97 16.0562C13.0952 16.9149 11.96 18.0188 10.5642 19.3684C9.69194 20.2118 8.30811 20.2117 7.436 19.3682L3.9449 15.9723C3.50614 15.5415 3.13887 15.1782 2.84303 14.8823C-0.557378 11.4819 -0.557378 5.96878 2.84303 2.56837C6.24344 -0.832036 11.7566 -0.832036 15.157 2.56837C18.5574 5.96878 18.5574 11.4819 15.157 14.8823ZM11.5002 9.00006C11.5002 7.61924 10.3808 6.49986 9.00002 6.49986C7.6192 6.49986 6.49982 7.61924 6.49982 9.00006C6.49982 10.3809 7.6192 11.5003 9.00002 11.5003C10.3808 11.5003 11.5002 10.3809 11.5002 9.00006Z" fill="white"/>
-                   </svg> 
+                    <path
+                      d="M15.157 14.8823L13.97 16.0562C13.0952 16.9149 11.96 18.0188 10.5642 19.3684C9.69194 20.2118 8.30811 20.2117 7.436 19.3682L3.9449 15.9723C3.50614 15.5415 3.13887 15.1782 2.84303 14.8823C-0.557378 11.4819 -0.557378 5.96878 2.84303 2.56837C6.24344 -0.832036 11.7566 -0.832036 15.157 2.56837C18.5574 5.96878 18.5574 11.4819 15.157 14.8823ZM11.5002 9.00006C11.5002 7.61924 10.3808 6.49986 9.00002 6.49986C7.6192 6.49986 6.49982 7.61924 6.49982 9.00006C6.49982 10.3809 7.6192 11.5003 9.00002 11.5003C10.3808 11.5003 11.5002 10.3809 11.5002 9.00006Z"
+                      fill="white" />
+                  </svg>
                 </a>
               </li>
 
             </ul>
             <div class="text-wrap">
-              <img src="images/social/_logo.png" alt="_logo">
+              <img src="images/social/_logo.svg" alt="_logo">
               <span>Examen et cours agrée au Québec & Canada</span>
             </div>
             <div class="arrow-top">
               <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.0254 6.42383L6.44434 0.833984L0.863281 6.42383L2.19922 7.75977L5.50391 4.42871V14H7.38477V4.42871L10.6895 7.75977L12.0254 6.42383Z" fill="black"/>
-               </svg>
+                <path
+                  d="M12.0254 6.42383L6.44434 0.833984L0.863281 6.42383L2.19922 7.75977L5.50391 4.42871V14H7.38477V4.42871L10.6895 7.75977L12.0254 6.42383Z"
+                  fill="black" />
+              </svg>
             </div>
 
           </div>
@@ -822,13 +876,17 @@
                 <div class="wrap">
                   <div class="world-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 0C5.37276 0 0 5.37276 0 12C0 18.6272 5.37276 24 12 24C18.6272 24 24 18.6272 24 12C24 5.37276 18.6272 0 12 0ZM12 22.7997C11.0505 22.7997 9.82544 21.0301 9.07747 17.9994H14.924C14.1747 21.03 12.9494 22.7997 12 22.7997ZM8.81972 16.8002C8.59022 15.5583 8.44398 14.1498 8.41247 12.6007H15.5886C15.5571 14.1509 15.4098 15.5584 15.1814 16.8002H8.81972ZM1.23058 12.5996H7.21215C7.2414 14.0868 7.37527 15.5031 7.60252 16.8002H2.34007C1.70223 15.5211 1.31384 14.1026 1.23058 12.5996ZM12 1.20035C12.9495 1.20035 14.1746 2.9699 14.9225 6.00058H9.07718C9.8253 2.97005 11.0507 1.20035 12 1.20035ZM15.1803 7.19977C15.4098 8.44173 15.556 9.85018 15.5875 11.3993L8.41253 11.4004C8.44403 9.85018 8.5914 8.44271 8.81977 7.20089L15.1803 7.19977ZM7.21215 11.4004H1.23058C1.31383 9.89744 1.70194 8.47874 2.33981 7.19977H7.60226C7.37502 8.49685 7.24141 9.91319 7.21215 11.4004ZM16.7878 12.5996H22.7694C22.6862 14.1026 22.2981 15.5213 21.6602 16.7991H16.3977C16.625 15.5031 16.7586 14.0868 16.7878 12.5996ZM16.7878 11.4004C16.7586 9.91319 16.6247 8.49688 16.3975 7.19977H21.6599C22.2978 8.47773 22.6859 9.89744 22.7692 11.3993L16.7878 11.4004ZM20.9738 6.00058H16.1523C15.709 4.08927 15.0655 2.50638 14.2882 1.45003C17.0612 2.05075 19.4417 3.71684 20.9738 6.00058ZM9.71191 1.45003C8.93457 2.50526 8.28996 4.08921 7.84783 6.00058H3.02629C4.55849 3.7169 6.93885 2.05078 9.71191 1.45003ZM3.02621 17.9994H7.84775C8.291 19.9107 8.93445 21.4936 9.71183 22.55C6.93879 21.9492 4.55832 20.2832 3.02621 17.9994ZM14.2881 22.55C15.0654 21.4947 15.71 19.9108 16.1522 17.9994H20.9737C19.4415 20.2831 17.0611 21.9492 14.2881 22.55Z" fill="#688FC4"/>
+                      <path
+                        d="M12 0C5.37276 0 0 5.37276 0 12C0 18.6272 5.37276 24 12 24C18.6272 24 24 18.6272 24 12C24 5.37276 18.6272 0 12 0ZM12 22.7997C11.0505 22.7997 9.82544 21.0301 9.07747 17.9994H14.924C14.1747 21.03 12.9494 22.7997 12 22.7997ZM8.81972 16.8002C8.59022 15.5583 8.44398 14.1498 8.41247 12.6007H15.5886C15.5571 14.1509 15.4098 15.5584 15.1814 16.8002H8.81972ZM1.23058 12.5996H7.21215C7.2414 14.0868 7.37527 15.5031 7.60252 16.8002H2.34007C1.70223 15.5211 1.31384 14.1026 1.23058 12.5996ZM12 1.20035C12.9495 1.20035 14.1746 2.9699 14.9225 6.00058H9.07718C9.8253 2.97005 11.0507 1.20035 12 1.20035ZM15.1803 7.19977C15.4098 8.44173 15.556 9.85018 15.5875 11.3993L8.41253 11.4004C8.44403 9.85018 8.5914 8.44271 8.81977 7.20089L15.1803 7.19977ZM7.21215 11.4004H1.23058C1.31383 9.89744 1.70194 8.47874 2.33981 7.19977H7.60226C7.37502 8.49685 7.24141 9.91319 7.21215 11.4004ZM16.7878 12.5996H22.7694C22.6862 14.1026 22.2981 15.5213 21.6602 16.7991H16.3977C16.625 15.5031 16.7586 14.0868 16.7878 12.5996ZM16.7878 11.4004C16.7586 9.91319 16.6247 8.49688 16.3975 7.19977H21.6599C22.2978 8.47773 22.6859 9.89744 22.7692 11.3993L16.7878 11.4004ZM20.9738 6.00058H16.1523C15.709 4.08927 15.0655 2.50638 14.2882 1.45003C17.0612 2.05075 19.4417 3.71684 20.9738 6.00058ZM9.71191 1.45003C8.93457 2.50526 8.28996 4.08921 7.84783 6.00058H3.02629C4.55849 3.7169 6.93885 2.05078 9.71191 1.45003ZM3.02621 17.9994H7.84775C8.291 19.9107 8.93445 21.4936 9.71183 22.55C6.93879 21.9492 4.55832 20.2832 3.02621 17.9994ZM14.2881 22.55C15.0654 21.4947 15.71 19.9108 16.1522 17.9994H20.9737C19.4415 20.2831 17.0611 21.9492 14.2881 22.55Z"
+                        fill="#688FC4" />
                     </svg>
                   </div>
                   <div class="text">Canada (Français)</div>
                   <div class="arrow-icon">
                     <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.793 0.732712C12.0787 1.03263 12.0672 1.50737 11.7672 1.79306L6.51678 6.79439C6.22711 7.07032 5.77187 7.07032 5.4822 6.79439L0.231735 1.79306C-0.0681872 1.50737 -0.0797238 1.03263 0.205968 0.732712C0.491659 0.432789 0.966392 0.421253 1.26631 0.706944L5.99949 5.21553L10.7327 0.706944C11.0326 0.421253 11.5073 0.43279 11.793 0.732712Z" fill="#F3F5F7"/>
+                      <path
+                        d="M11.793 0.732712C12.0787 1.03263 12.0672 1.50737 11.7672 1.79306L6.51678 6.79439C6.22711 7.07032 5.77187 7.07032 5.4822 6.79439L0.231735 1.79306C-0.0681872 1.50737 -0.0797238 1.03263 0.205968 0.732712C0.491659 0.432789 0.966392 0.421253 1.26631 0.706944L5.99949 5.21553L10.7327 0.706944C11.0326 0.421253 11.5073 0.43279 11.793 0.732712Z"
+                        fill="#F3F5F7" />
                     </svg>
                   </div>
                 </div>
@@ -847,4 +905,5 @@
 
   </div>
 </body>
+
 </html>

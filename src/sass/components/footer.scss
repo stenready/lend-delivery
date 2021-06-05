@@ -84,7 +84,7 @@
 			margin-bottom: 56px;
 		}
 		.action {
-			@include buttonCreate(#f3f5f7, 32, #e3e9ee);
+			@include createButton(#f3f5f7, 32, #e3e9ee);
 			color: black;
 			margin-right: 16px;
 		}
