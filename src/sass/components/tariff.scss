@@ -80,7 +80,7 @@
 			align-items: center;
 			justify-content: center;
 			align-items: center;
-			@include buttonCreate(#f3f5f7, 32, #e3e9ee);
+			@include createButton(#f3f5f7, 32, #e3e9ee);
 			color: black;
 		}
 		.minus {
@@ -90,7 +90,7 @@
 			margin-left: 20px;
 		}
 		.result {
-			@include buttonCreate(transparent, 32, transparent);
+			@include createButton(transparent, 32, transparent);
 			transform: translateY(33px);
 			border-radius: 50px;
 			border: 1px solid #0065f2;
@@ -193,7 +193,7 @@
 				justify-content: center;
 				flex-direction: column;
 				.action {
-					@include buttonCreate(#0065f2, 32, #005ddf);
+					@include createButton(#0065f2, 32, #005ddf);
 					color: white;
 					width: 100%;
 					margin-top: 23px;

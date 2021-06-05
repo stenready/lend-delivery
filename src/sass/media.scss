@@ -1,4 +1,10 @@
 @media (min-width: 1920px) {
+	.nav {
+		margin-left: 62px;
+	}
+	.circle {
+		display: flex;
+	}
 	.container {
 		max-width: 1920px;
 	}
@@ -32,7 +38,7 @@
 			top: 134%;
 			z-index: 10;
 		}
-		.cart {
+		.card {
 			left: 25%;
 			bottom: -166%;
 		}
@@ -88,7 +94,7 @@
 				margin-left: -57px;
 			}
 		}
-		.cart-component {
+		.card-component {
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
@@ -136,7 +142,7 @@
 		.elipse {
 			top: 117px;
 		}
-		.numbers__img-cart {
+		.numbers__img-card {
 			right: 176px;
 			top: 571px;
 		}

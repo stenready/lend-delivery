@@ -21,7 +21,7 @@
 		margin: 80px auto;
 	}
 	.action {
-		@include buttonCreate(#f3f5f7, 32, #e3e9ee);
+		@include createButton(#f3f5f7, 32, #e3e9ee);
 		color: #000000;
 		align-items: center;
 		width: 295px;

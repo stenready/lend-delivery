@@ -8,11 +8,17 @@
 	align-items: center;
 	justify-content: space-between;
 	height: $menuHeight;
-	position: relative;
-	// position: fixed;
-	// z-index: 99999999;
-	// left: 0;
-	// right: 0;
+	.btn-container {
+		display: flex;
+		align-items: center;
+		.circle {
+			margin-right: 26px;
+			@include makeCircle(#f3f5f7, 36px, 36px);
+			display: none;
+			align-items: center;
+			justify-content: center;
+		}
+	}
 	&__logo {
 		margin-left: 38px;
 		margin-top: 2px;
@@ -35,7 +41,7 @@
 		font-weight: 500;
 	}
 	&__button {
-		@include buttonCreate($navButtonColor, 40);
+		@include createButton($navButtonColor, 40);
 		margin-right: 43px;
 		color: #f3f5f7;
 	}
@@ -53,6 +59,8 @@
   transform: translateY(-100%);
   transition: 0.2s transform cubic-bezier(.3,.73,.3,.74);
 	border-bottom: 1px solid #ccc;
+	background: #fff;
+	z-index: 99999;
 }
 
 body.down .nav.clone {

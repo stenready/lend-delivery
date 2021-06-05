@@ -3,11 +3,11 @@ const text = document.querySelector(".language-dropdown .text");
 
 dropdown.addEventListener("click", toggleDropdownHandler);
 
-document.addEventListener("click", closeDrpdown);
+document.addEventListener("click", closeDropdown);
 
 let dropdownIsShow = false;
 
-function closeDrpdown(e) {
+function closeDropdown(e) {
 	const onDrop = e.target.closest(".language-dropdown");
 	if (!onDrop && dropdownIsShow) {
 		dropdown.classList.remove("show");

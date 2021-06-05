@@ -23,7 +23,7 @@
 			}
 			.top {
 				.event-btn {
-					@include buttonCreate(#fefefe, 4, #e2e9ee);
+					@include createButton(#fefefe, 4, #e2e9ee);
 					width: 100%;
 					display: flex;
 					align-items: center;
@@ -35,13 +35,13 @@
 				}
 				.chips {
 					.chip {
-						@include buttonCreate(#fefefe, 4, #e2e9ee);
+						@include createButton(#fefefe, 4, #e2e9ee);
 						padding: 4px 16px;
 						color: blue;
 						margin-right: 8px;
 					}
 					.transparent {
-						@include buttonCreate(transparent, 4);
+						@include createButton(transparent, 4);
 						padding: 4px 16px;
 						border: 1px solid rgba(254, 254, 254, 0.4);
 						color: #fefefe;

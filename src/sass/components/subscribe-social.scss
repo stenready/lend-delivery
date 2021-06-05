@@ -51,7 +51,7 @@
 				}
 			}
 			.action {
-				@include buttonCreate(#0065f2, 32, #005ddf);
+				@include createButton(#0065f2, 32, #005ddf);
 				color: white;
 				right: 177px;
 				position: absolute;
