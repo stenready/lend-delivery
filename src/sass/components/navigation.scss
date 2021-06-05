@@ -8,6 +8,7 @@
 	align-items: center;
 	justify-content: space-between;
 	height: $menuHeight;
+	position: relative;
 	// position: fixed;
 	// z-index: 99999999;
 	// left: 0;
@@ -42,4 +43,18 @@
 	// 	position: fixed;
 	// 	top: 20px;
 	// }
+}
+
+.nav.clone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-100%);
+  transition: 0.2s transform cubic-bezier(.3,.73,.3,.74);
+	border-bottom: 1px solid #ccc;
+}
+
+body.down .nav.clone {
+  transform: translateY(0);
 }

@@ -1,13 +1,26 @@
-const nav = document.querySelector("#navbar");
-const NavTop = nav.offsetHeight;
+const sticky = {
+  sticky_after: 200,
+  init: function () {
+    this.header = document.querySelector('#navbar');
+    this.clone = this.header.cloneNode(true);
+    this.clone.classList.add("clone");
+    this.header.insertBefore(this.clone, null);
+    this.scroll();
+    this.events();
+  },
 
-function fixnavbar() {
-  if (window.scrollY >= NavTop) {
-    document.body.classList.add("fixed-nav");
-    nav.classList.add("fixed-nav");
-  } else {
-    document.body.classList.remove("fixed-nav");
-    nav.classList.remove("fixed-nav");
+  scroll: function () {
+    if (window.scrollY > this.sticky_after) {
+      document.body.classList.add("down");
+    }
+    else {
+      document.body.classList.remove("down");
+    }
+  },
+
+  events: function () {
+    window.addEventListener("scroll", this.scroll.bind(this));
   }
-}
-window.addEventListener("scroll", fixnavbar);
+};
+
+document.addEventListener("DOMContentLoaded", sticky.init.bind(sticky));

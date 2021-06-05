@@ -1,6 +1,7 @@
 .accordion {
 	&__item {
 		margin-bottom: 16px;
+		cursor: pointer;
 		.accordion__content {
 			height: 0;
 			visibility: hidden;
