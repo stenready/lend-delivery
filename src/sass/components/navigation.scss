@@ -19,6 +19,21 @@
 			justify-content: center;
 		}
 	}
+	.wrap {
+		align-items: center;
+		display: flex !important;
+		.icon {
+			margin-right: 24px;
+			width: 36px;
+			height: 36px;
+			border-radius: 50%;
+			background: #f3f5f7;
+			align-items: center;
+			justify-content: center;
+			display: flex;
+		}
+		// @include makeCircle(#f3f5f7, 36px, 36px);
+	}
 	&__logo {
 		margin-left: 38px;
 		margin-top: 2px;
@@ -52,17 +67,17 @@
 }
 
 .nav.clone {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  transform: translateY(-100%);
-  transition: 0.2s transform cubic-bezier(.3,.73,.3,.74);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	transform: translateY(-100%);
+	transition: 0.2s transform cubic-bezier(0.3, 0.73, 0.3, 0.74);
 	border-bottom: 1px solid #ccc;
 	background: #fff;
 	z-index: 99999;
 }
 
 body.down .nav.clone {
-  transform: translateY(0);
+	transform: translateY(0);
 }

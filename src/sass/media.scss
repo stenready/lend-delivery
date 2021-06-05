@@ -271,9 +271,10 @@
 			}
 		}
 		.text-wrap {
+			margin-left: -101px;
 			img {
 				width: 180px;
-				margin-left: 20px;
+				// margin-left: 20px;
 				margin-top: -8px;
 				margin-bottom: 18px;
 			}
@@ -728,6 +729,7 @@
 			position: absolute;
 			right: 0;
 			bottom: 439px;
+			z-index: 100;
 		}
 		.mobile-elipse {
 			position: absolute;

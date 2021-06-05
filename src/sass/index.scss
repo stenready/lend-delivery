@@ -26,6 +26,9 @@
 		display: none;
 	}
 }
+footer {
+	background: #22344d;
+}
 
 .d-376-none {
 	@media (max-width: 369px) {
@@ -111,6 +114,18 @@ ul {
 		display: none;
 	}
 }
+.d-n-776 {
+	display: block;
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+// .hide-on768 {
+// 	display: block;
+// 	@media (max-width: 768px) {
+// 		display: none !important;
+// 	}
+// }
 .d-1920 {
 	display: none;
 	@media (min-width: 1920px) {
