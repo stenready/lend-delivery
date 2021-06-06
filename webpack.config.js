@@ -1,5 +1,6 @@
 "use strict";
 
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -53,7 +54,7 @@ module.exports = {
 			template: "index.html",
 			minify: {
 				removeComments: isProd,
-				collapseWhitespace: isProd,
+				collapseWhitespace: !isProd,
 			},
 		}),
 		new CopyPlugin({
@@ -65,6 +66,10 @@ module.exports = {
 				{
 					from: path.resolve(__dirname, "src/images"),
 					to: path.resolve(__dirname, "dist/images"),
+				},
+				{
+					from: path.resolve(__dirname, "src/fonts"),
+					to: path.resolve(__dirname, "dist/fonts"),
 				},
 			],
 		}),

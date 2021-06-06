@@ -7,12 +7,12 @@
 ) {
 	@font-face {
 		font-family: quote($font_name);
-		src: url("../fonts/" + $file-name + ".eot");
-		src: url("../fonts/" + $file-name + ".woff2") format("woff2"),
-			url("../fonts/" + $file-name + ".ttf") format("truetype"),
-			url("../fonts/" + $file-name + ".svg" + "#" + $file-name) format("svg"),
-			url("../fonts/" + $file-name + ".woff") format("woff"),
-			url("../fonts/" + $file-name + ".woff") format("woff");
+		src: url("fonts/" + $file-name + ".eot");
+		src: url("fonts/" + $file-name + ".woff2") format("woff2"),
+			url("fonts/" + $file-name + ".ttf") format("truetype"),
+			url("fonts/" + $file-name + ".svg" + "#" + $file-name) format("svg"),
+			url("fonts/" + $file-name + ".woff") format("woff"),
+			url("fonts/" + $file-name + ".woff") format("woff");
 
 		font-weight: $weight;
 		font-style: $style;
@@ -38,7 +38,7 @@
 	font-weight: 600;
 	font-size: 16px;
 	background-color: $bg;
-	transition: all .3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	i {
 		font-size: 18px;
 	}
